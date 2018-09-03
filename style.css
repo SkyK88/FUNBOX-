@@ -1,0 +1,11 @@
+body {
+  background: #428FB9;
+}
+
+.flexy {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center
+  flex-flow: inline wrap;
+}

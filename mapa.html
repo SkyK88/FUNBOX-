@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	<link rel="stylesheet"  href="./style.css">
+<script src="http://yandex.st/jquery/1.6.4/jquery.min.js" type="text/javascript"></script>
+
+	 <script src="./direct_geocode2.js" type="text/javascript"></script>
+	<title>Navigation</title>
+	<style type="text/css">
+        html, body, #map {
+            width: 700px;
+            height: 500px;
+            margin: 0;
+            padding: 0;
+        }
+
+      .alert {
+				padding: 15px;
+  border: 1px solid #d6e9c6;
+  border-radius: 4px;
+  color: #3c763d;
+  background-color: #dff0d8;
+	width: 400px;
+			}
+
+		.flex-container {
+			display: -webkit-inline-flex;
+      display: inline-flex; /*отображает контейнер как строчный элемент*/
+		}
+
+		.del {
+			color: red;
+			width: 100px;
+			height: 100px;
+		}
+
+    </style>
+</head>
+<body>
+	<div class="flex-container" display = "flex">
+	<form id="search_route">
+	<b>Начало: </b>
+	<input id="start" type="text reset" value="" style="width: 360px;"><br />
+	<input id="addplace" type="submit" value="Найти"/>
+	</form>
+	<br />
+ <div id="map" style="width: 600px; height: 400px"></div>
+ <ul id="waypoints"></ul>
+ </div>
+</body>
+</html>
